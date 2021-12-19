@@ -1,0 +1,294 @@
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: roboto, sans-serif;
+        box-sizing: border-box;
+    }
+
+    /*네비*/
+    #nav {
+        height: 80px;
+        width: 100%;
+        box-shadow: 0px 4px 4px 0 #eeeeee;
+    }
+
+    nav {
+        margin-left: auto;
+        margin-right: auto;
+        height: 80px;
+        width: 900px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        width: 124px;
+        height: 52px;
+        overflow: hidden;
+
+    }
+
+    .logo img {
+        display: inline-block;
+        width: 124px;
+        height: 52px;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .menu {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .menu li {
+        margin-right: 30px;
+        line-height: 75px;
+    }
+
+    .menu li a {
+        color: #757575;
+        font-size: 16px;
+        line-height: 75px;
+    }
+
+    .menu li:hover .textarea {
+        opacity: 1;
+    }
+
+    .textarea {
+        opacity: 0;
+        margin-top: auto;
+        height: 3px;
+        background-color: #6426eb;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .search-box {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        background: #ffffff;
+        height: 25px;
+        border-radius: 40px;
+        padding: 10px;
+        border: 1px solid #EEEEEE;
+
+    }
+
+    .search-box:hover>.search-txt {
+        width: 170px;
+        opacity: 1;
+
+    }
+
+    .search-box:hover>.search-btn {
+        background: #d9d9d9;
+    }
+
+    .search-btn {
+        color: #424242;
+        margin-left: auto;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+    }
+
+    .search-txt {
+        width: 170px;
+        border: none;
+        background: none;
+        outline: none;
+        padding: 0;
+        color: #212121;
+        font-size: 16px;
+        transition: 0.4s;
+        line-height: 20px;
+        opacity: 0;
+    }
+
+    .login {
+        display: flex;
+        align-items: center;
+        line-height: 100%;
+        padding: 0px;
+    }
+
+    .login li {
+        margin-right: 8px;
+        color: #757575;
+        font-size: 12px;
+    }
+
+    .login li a {
+        color: #757575;
+        font-size: 12px;
+    }
+
+    .login li a:hover {
+        font-weight: 800;
+        color: #424242;
+    }
+
+    /*세컨네비*/
+    #subnav {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 900px;
+        height: 21px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #subnav .direction {
+        padding-left: 0px;
+    }
+
+    #subnav li {
+        margin-right: 5px;
+    }
+
+    .direction li {
+        color: #424242;
+        font-size: 14px;
+    }
+
+    .direction li a {
+        color: #424242;
+        font-size: 14px;
+    }
+
+    .chapter li {
+        color: #757575;
+        font-size: 14px;
+    }
+
+    .chapter li a {
+        color: #757575;
+        font-size: 14px;
+    }
+
+    .chapter li a:hover {
+        font-weight: 800;
+        color: #6426EB;
+    }
+
+
+    #title {
+        margin-top: 80px;
+        height: 36px;
+        font-size: 36px;
+        font-weight: 750;
+        color: #212121;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+
+
+
+    /* 푸터 */
+    footer {
+        margin-top: 120px;
+        height: 240px;
+        color: #EEEEEE;
+        background-color: #212121;
+        text-align: center;
+    }
+
+    .footlogo {
+        margin-top: 20px;
+        height: 54px;
+        width: 140px;
+    }
+    .footA {
+        margin-top: 20px;
+    }
+
+    .footA  ul {
+        justify-content : center;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .footA a {
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: inherit;
+        font-size: 12px;
+        text-decoration: none;	
+
+        line-height: 2em;
+        text-align: center;
+    } 
+
+    .footA a:hover {
+        background-color: #424242;
+    }
+
+
+
+
+    .footB {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .footB ul {
+        justify-content : center;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .footB a {
+        color: #ffffff;
+        display: block;
+        margin-right: 2px;
+        margin-left: 2px;
+        padding: 0;
+        color: inherit;
+        font-size: 24px;
+        text-decoration: none;	
+        width: 36px;
+        line-height: 0;
+        border-radius: 0; 
+        text-align: center;
+    } 
+
+    .footB a:hover {
+        background-color: #424242;
+    }
+
+
+
+    .footC {
+        margin-top: 24px;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 200%;
+        color: #EEEEEE;
+    }

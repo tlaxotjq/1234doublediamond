@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>메인</title>
+	<script src="https://kit.fontawesome.com/d82e6448db.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="nav-foot-style.css">
+	
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: roboto, sans-serif;
+			position: relative;
+			height:100%
+		}
+
+		#class1 {
+			display: flex;
+			margin-left: auto;
+			margin-right: auto;
+			height: 750px;
+			width: 100%;
+			background-image: url('https://i.postimg.cc/15xBVV5F/Mask-Group.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			justify-content: center;
+		}
+		.class1-1{
+			width: 900px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		#class1 h1 {
+			font-size: 48px;
+			color: #fff;
+		}
+
+		#class1 a {
+			font-size: 18px;
+			color: #FFF;
+			background-color: #6426EB;
+			border-radius: 20px;
+			text-decoration: none;
+			padding: 5px 10px;
+			width: 60px;
+		}
+
+
+		.class2 {
+			display: flex;
+			height: 500px;
+			background-color: #EEE;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.class2 h2 {
+			font-size: 36px;
+			font-weight: bold;
+			color: #212121;
+			margin-top: 60px;
+		}
+		.class2-1{
+			margin-top: 50px;
+			display: flex;
+			width: 900px;
+			justify-content: center;
+			align-items: center;
+		}
+		.class2 img {
+			width: 250px;
+			height: 250px;
+			margin-left: 25px;
+			margin-right: 25px;
+		}
+
+		.class3 {
+			width: 100%;
+			height: 700px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-end;
+		}
+		.class3-1{
+			display: flex;
+			flex-direction: column;
+		}
+		.class3-2{
+			width: 875px;
+			overflow: hidden;
+			display: flex;
+			justify-content: flex-start;
+			flex-direction: row;
+			margin-left: 100px;
+		}
+		.class3 h3 {
+			font-size: 36px;
+			font-weight: bold;
+			color: #212121;
+		}
+
+		.class3 p {
+			font-size: 18px;
+			color: #424242;
+		}
+
+		.class3 .card1 {
+			width: 300px;
+			height: 504px;
+			float: left;
+			margin-left: 30px;
+		}
+
+		.class3 .card1 h4 {
+			font-size: 24px;
+			font-weight: bold;
+			color: #212121;
+			margin-top: 10px;
+		}
+
+		.class3 .card1 p {
+			font-size: 18px;
+			color: #424242;
+			margin-top: 5px;
+		}
+
+		.class4 {
+			height: 450px;
+			background-color: #EEE;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.class4-1{
+			display: flex;
+			flex-direction: column;
+		}
+		.card2 {
+			width: 900px;
+			height: 300px;
+			background-color: #FFF;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+		}
+
+		.class4 .card2 img {
+			width: 450px;
+			height: 300px;
+			margin-right: 58px;
+			margin-left: 0px;
+		}
+
+		.class4 .card2 h5 {
+			font-size: 24px;
+			font-weight: bold;
+			color: #212121;
+			margin-bottom: 20px;
+		}
+
+		.class4 .card2 p {
+			font-size: 14px;
+			color: #424242;
+			margin-bottom: 30px;
+		}
+
+		.class4 .card2 a {
+			font-size: 14px;
+			color: #FFF;
+			background-color: #6426EB;
+			border-radius: 15px;
+			text-decoration: none;
+			padding: 5px 10px;
+			width: 60px;
+		}
+
+		.class5 {
+			height: 592px;
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.class5 h5 {
+			color: #212121;
+			font-size: 36px;
+			font-weight: bold;
+			margin-top: 60px;
+			text-align: center;	
+			margin-bottom: 50px;
+		}
+		.class5-1{
+			display: flex;
+			width: 900px;
+			height: 365px;
+			overflow: hidden;
+			flex-direction: row;
+			justify-content: flex-start;
+		}
+		.class5 .card3 {
+			width: 250px;
+			height: 350px;
+			border-radius: 20px;
+			margin-right: 16px;
+			background-color: #FFF;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+			display: flex;
+			flex-direction: column;
+		}
+
+		.class5 .card3 img {
+			width: 250px;
+			height: 250px;
+			border-radius: 20px 20px 0px 0px;
+		}
+
+		.class5 .card3 h6{
+			font-size: 22px;
+			color: #212121;
+			margin-left: 15px;
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+
+		.class5 .card3 p {
+			font-size: 14px;
+			color: #212121;
+			margin-left: 15px;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.main-button {
+			display: flex;
+			gap : 32px;
+		}
+		.class-right-button {
+            width: 32px;
+            height: 32px;
+            background-color: #6426EB;
+            border-radius: 50%;
+            border: 1px solid #eeeeee inset;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            line-height: 100%;
+            font-weight: 700;
+            z-index: 2;
+        }
+        .class-right-button:hover {
+            transition: all 0.8s ease;  
+			color: #6426EB;
+			border: 1px solid #6426EB ;
+            background-color: #ffffff;
+        }
+
+	</style>
+</head>
+<body>
+
+	<div id="nav">
+		<nav>
+			<div class="logo">
+				<a href="index.html"><img src="https://i.postimg.cc/g2x5b7WK/Group-83.png"></a>
+			</div>
+			<ul class="menu">
+				<li><a href="intro-site.html">소개</a>
+					<div class="textarea"></div>
+				</li>
+				<li><a href="class.html">강의 자료실</a>
+					<div class="textarea"></div>
+				</li>
+				<li><a href="reference.html">참조 사이트</a>
+					<div class="textarea"></div>
+				</li>
+			</ul>
+			<div class="search-box">
+				<input type="text" class="search-txt" name="" placeholder="검색어를 입력하세요">
+				<a class="search-btn" href="#">
+					<i class="fas fa-search"></i>
+				</a>
+			</div>
+			<ul class="login">
+				<li><a href="sign.html">회원가입</a></li>
+				<li>ㅣ</li>
+				<li><a href="login.html">로그인</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+
+	<div id="class1">
+		<div class="class1-1">
+			<h1>UXUI 디자인을 위한<br>
+				더블다이아몬드 프로세스<br>
+			기반 툴 소개</h1>
+			<a href="intro-diamond.html">More></a>
+		</div>
+	</div>
+
+	<div class="class2">
+		<h2>디자인 프로그램 별 소개</h2>
+		<div class="class2-1">
+			<a href="https://www.adobe.com/kr/products/xd.html"><img src="https://i.postimg.cc/JnNFG3Vp/Rectangle-339.png"></a>
+			<a href="https://www.figma.com/files/recent?fuid=960571626730533244"><img src="https://i.postimg.cc/1z6Cj0ty/Rectangle-340.png"></a>
+			<a href="https://www.sketch.com/"><img src="https://i.postimg.cc/g2LNxy33/Rectangle-341.png"></a>
+		</div>
+	</div>
+
+	<div class="class3">
+		<div class="class3-1">
+			<h3>강의별 인기<br>
+			유튜버 모음</h3>
+			<p>대중적으로 인기 있는 uiux<br>
+				디자인 툴 관련 유튜버들을<br>
+			바로 만나보세요!</p>
+			<div class="main-button">
+			<div class="class-right-button">
+				<
+			</div>
+			<div class="class-right-button">
+				>
+			</div>
+		</div>
+		</div>
+		<div class="class3-2">
+			<div class="card1"><a href="https://www.youtube.com/c/MadiaDesigner"><img src="https://i.postimg.cc/BZNJ8mbR/Frame-101.png"></a>
+				<h4>Madia Designer</h4>
+				<p>Adobe XD 기초강의 유튜버</p>
+				<p>상세설명</p>
+			</div>
+			<div class="card1"><a href="https://www.youtube.com/c/%EC%97%B0%EC%A0%95sFigma"><img src="https://i.postimg.cc/sXpry7X4/Frame-102-2.jpg"></a>
+				<h4>연정's Figma</h4>
+				<p>Figma 기초 강의 유튜버</p>
+				<p>상세설명</p>
+			</div>
+			<div class="card1"><a href="https://www.youtube.com/channel/UCsmOMOzJ7vha8SWVt3--Fyg"><img src="https://i.postimg.cc/QNb2bXWC/Frame-103-2.jpg"></a>
+				<h4>쌤언니</h4>
+				<p>Sketch 기초 강의 유튜버</p>
+				<p>상세설명</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="class4">
+		<div class="card2">
+			<img src="https://i.postimg.cc/dtfHZ6n6/unsplash-4-UGmm3-WRUo-Q.png" align="left" vspace="0" hspace="10">
+
+			<div class="class4-1">
+				<h5>우리 웹사이트는..</h5>
+				<p>ui ux에 필요한 디자인 과정을 편하게 디자인<br>
+					툴을 사용해서 진행 할 수 있도록 도와주는 사<br>
+					이트 입니다. 디자인 툴을 간단히 배우고 싶은<br>
+				디자이너분들에게 안성맞춤인 사이트입니다.</p>
+				<a href="intro-site.html">더보기 ></a>
+			</div>
+		</div>
+	</div>
+
+		<div class="class5">
+			<h5>분야 별 사이트 모음</h5>
+			<div class="class5-1">
+					<a href="reference.html" class="card3">
+						<img src="https://i.postimg.cc/RFBgwrXm/unsplash-7hq-Ex1al0-Fk.png">
+						<h6>UX,UI</h6>
+						<p>ux,ui 디자인<br>
+						레퍼런스 사이트</p>
+					</a>
+					<a href="reference_webdesign.html" class="card3">
+						<img src="https://r8m6e4u4.rocketcdn.me/wp-content/uploads/webdesign-berlin.jpg">
+						<h6>Web design</h6>
+						<p>웹 디자인<br>
+						레퍼런스 사이트</p>
+					</a>
+					<a href="reference.html" class="card3">
+						<img src="https://blog.kakaocdn.net/dn/lpA4u/btq0z0HbpEe/1j1KU4HnEcUIkR1MCk44T0/img.jpg">
+						<h6>Icon</h6>
+						<p>아이콘<br>
+						아이콘 제공 사이트</p>
+					</a>
+					<a href="reference.html" class="card3">
+						<img src="https://t1.daumcdn.net/cfile/tistory/2341B34A58070D4E04">
+						<h6>Photo</h6>
+						<p>사진<br>
+						아이콘 제공 사이트</p>
+					</a>
+			</div>
+		</div>
+
+		
+		<footer>
+			<a href="index.html"><img class="footlogo" src="https://i.postimg.cc/2ywWyB9m/Group-74.png"></a>
+	
+			<div class="footA">
+						<ul>
+							
+							<li><a href="intro-site.html">사이트소개
+                            </span></a></li>
+    
+                    <li><a href="intro-site.html">이용약관
+                            </span></a></li>
+    
+                    <li><a href="intro-site.html">이용안내
+                            </span></a></li>
+    
+                    <li><a href="intro-site.html">개인정보처리방침
+                            </span></a></li>
+							
+							
+							</ul>
+						</div>
+	
+	
+			<div class="footB">
+						<ul>
+							
+							<li><a href="https://twitter.com/?lang=ko">
+							<span class="fa fa-twitter" title="Twitter">
+							</span></a></li>
+	
+							<li><a href="https://ko-kr.facebook.com/">
+							<span class="fa fa-facebook" title="Facebook">
+							</span></a></li>
+	
+							<li><a href="https://www.instagram.com/?hl=ko">
+							<span class="fa fa-instagram" title="Instagram">
+							</span></a></li>
+	
+							<li><a href="https://www.youtube.com/">
+							<span class="fa fa-youtube" title="YouTube">
+							</span></a></li>
+							
+							</ul>
+						</div>
+	
+	
+			<p class="footC">
+						Copyright © Web Publishing. 2021 All Rights Reserved.</p>
+		</footer>
+
+	</body>
+</html>

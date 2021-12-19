@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>class</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/d82e6448db.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="nav-foot-style.css">
+
+	<style type="text/css">
+		/* 바디 */
+		.wrapper{
+			max-width: 900px;
+			margin: 0 auto;
+            -ms-overflow-style: none;
+		}
+
+		.class-content-title{
+			display: flex;
+			justify-content: space-between;
+			height: 42px;
+			font-size: 36px;
+			font-weight: bolder;
+			margin-top: 160px;
+            margin-bottom: 8px
+		}
+		.class-content-title:first-child {
+			margin-top:0;
+		}
+		.class-chapter {
+			margin-top: 20px;
+		}
+
+		.class-content-title p {
+			font-weight: bolder;
+			font-size: 18px;
+			line-height: 21px;
+			color: #424242;
+		}
+		.class-chapter li {
+			font-size: 14px;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 21px;
+			color: #424242;
+		}
+
+		.class-chapter li a {
+			color: #757575;
+			font-size: 18px;
+		}
+
+		.class-chapter li a:hover {
+			font-weight: 800;
+			color: #6426EB;
+		}
+        .li-p {
+			margin-left: 8px;
+		}
+
+		.class-content-card-section{
+
+            position: relative;
+            align-items: center;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+		}
+		.class-content-card-section a {
+			text-decoration: none;
+		}
+		
+		.class-content-card{
+            z-index: 1;
+            position: relative;
+			margin-top: 24px;
+			overflow: hidden;
+			width: 210px;
+			height: 240px;
+			border: 1px solid #212121 inset;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 8px;
+		}
+
+		.class-content-card:hover .class-content-card-sum {
+			border: 0px;
+			height: 160px;
+			width: 280px;
+			margin-left: -35px;
+		}
+        .class-content-card:hover {
+			opacity: 60%;
+            transition: all 0.8s ease;  
+		}
+
+
+		.class-content-card-sum {
+			align: right;
+			width: 210px;
+			height: 120px;	
+			border-top: 20px solid #212121;
+			border-bottom: 20px solid #212121;
+			transition: all 1.0s ease;  
+
+		}
+
+		.class-content-card-text {
+			display: flex;
+		}
+
+		.class-content-card-text-2 {
+			display: flex;
+		}
+		.class-content-card-text-title {
+			margin-top: 12px;
+			margin-left: 12px;
+			width: 132px;
+			height: 26px;
+			font-weight: bolder;
+			font-size: 12px;
+			line-height: 110%;
+			color: #212121;
+		}
+		
+		.class-content-card-big-ball {
+			margin-top: 8px;
+			margin-left: 22px;
+			width: 32px;
+			height: 32px;
+			border-radius : 50%;
+			border: 1px solid #aaaaaa;
+		}
+		.class-content-card-small-ball {
+			margin-top: 9px;
+			margin-left: 12px;
+			width: 16px;
+			height: 16px;
+			border-radius : 50%;
+			border: 1px solid #aaaaaa;
+		}
+		.class-content-card-text-2 p {
+			margin-top: 12px;
+			margin-left: 4px;
+			font-weight: 300;
+			font-size: 10px;
+			line-height: 100%;
+			color: #AAAAAA;
+		}
+
+        /* 아티스트카드 */
+        .class-artist-card p {
+
+            font-size: 20px;
+            margin: 0;
+            line-height: 150%;
+            text-align: center;
+            letter-spacing: -0.05em;
+            color: #616161;
+            }
+        .class-artist-card {
+
+            width: 133px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: center;
+            color: #757575;
+        }
+        .class-artist-card img {
+            margin-top: 24px;
+            width: 133px;
+            height: 133px;
+            border-radius: 50%;
+            border: 1px solid #212121 inset;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .class-artist-card-section {
+            height: 240px;
+            overflow-x: auto;
+            overflow-Y: hidden;
+        }
+        .class-scroll-content {
+            display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+            height: 200px;
+            width: auto;
+        }
+        .class-artist-card:hover {
+            opacity: 60%;
+            transition: all 0.8s ease;  
+        }
+
+        .class-artist-card-section .class-artist-card:hover img{
+            border-radius: 40%;
+            box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.25);
+            transition: all 0.8s ease;  
+        }
+
+        .class-under-card-section .class-artist-card:hover img{
+            box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.25);
+            margin-top: -10px;
+            margin-bottom: 50px;
+            transition: all 0.8s ease;  
+        }
+
+
+
+
+        /* 언더카드 */
+        .class-under-card-section {
+
+        }
+        .class-under-card-one {
+            position: relative;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+        .class-under-card-one .class-artist-card {
+            font-weight: 700;
+            color: #212121;
+            padding-top: 40px;
+        }
+        .class-under-card-two {
+            margin-left: 18px;
+            width: 748px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            height: 320px;
+            
+        }
+        .class-under-card-scroll {
+            align-items: center;
+            position: relative;
+            height: 292px;
+            width: auto;
+            max-width: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: nowrap;
+        }
+
+        .class-under-card {
+            background: #ffffff;
+            position: relative;
+            margin-top: 24px;
+            border: 1px solid #212121 inset;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 8px;
+            width: 210px;
+            height: 280px;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .class-under-card:last-child {
+            margin-right:2px;
+        }
+        
+        .class-under-card:hover .class-under-card-sum{
+            transition: all 0.8s ease;  
+            height: 200px;
+            margin-left: -20px;
+            margin-top: -40px;
+        }
+
+        .class-under-card:hover {
+            transition: all 0.8s ease;  
+            opacity: 60%;
+            background-color: #eeeeee;
+        }
+        .class-under-card-sum {
+            height: 160px;
+            min-width: 212px;
+        }
+
+        .class-under-card-text {
+            display: flex;
+        }
+        .class-under-card-text-title {
+            margin-top: 12px;
+			margin-left: 12px;
+			width: 132px;
+			height: 26px;
+			font-weight: bolder;
+			font-size: 20px;
+            line-height: 110%;
+            color: #212121;
+        }
+
+        .class-under-card-para {
+            margin-left: 12px;
+            margin-top: 10px;
+            width: 186px;
+            height: 48px;
+            overflow: hidden;
+            font-size: 10px;
+            line-height: 120%;
+            text-align: justify;
+            color: #666666;
+        }
+        
+        ::-webkit-scrollbar { 
+            display: none; 
+        }
+        .class-right-button {
+            margin-left: 852px;
+            width: 44px;
+            height: 44px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            border: 1px solid #eeeeee inset;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: #6426EB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            line-height: 100%;
+            font-weight: 100;
+            z-index: 2;
+            position: absolute;
+        }
+        .class-right-button:hover {
+            transition: all 0.8s ease;  
+            opacity: 60%;
+            background-color: #eeeeee;
+        }
+	</style>
+</head>
+
+<body>
+    <div id="nav">
+		<nav>
+			<div class="logo">
+				<a href="index.html"><img src="https://i.postimg.cc/g2x5b7WK/Group-83.png"></a>
+			</div>
+			<ul class="menu">
+				<li><a href="intro-site.html">소개</a>
+					<div class="textarea"></div>
+				</li>
+				<li><a href="class.html">강의 자료실</a>
+					<div class="textarea"></div>
+				</li>
+				<li><a href="reference.html">참조 사이트</a>
+					<div class="textarea"></div>
+				</li>
+			</ul>
+			<div class="search-box">
+				<input type="text" class="search-txt" name="" placeholder="검색어를 입력하세요">
+				<a class="search-btn" href="#">
+					<i class="fas fa-search"></i>
+				</a>
+			</div>
+			<ul class="login">
+				<li><a href="sign.html">회원가입</a></li>
+				<li>ㅣ</li>
+				<li><a href="login.html">로그인</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+
+
+	<div id="subnav">
+		<ul class="direction">
+			<li><a href="index.html">홈</a></li>
+			<li>></li>
+			<li><a href="class.html">강의자료실</a></li>
+			<li>></li>
+			<li><a href="class.html">툴활용</a></li>
+            </ul>
+            <ul class="chapter">
+                <li><a href="class.html">디자인개념론</a></li>
+                <li>ㅣ</li>
+                <li><a href="class.html">툴 활용</a></li>
+		</ul>
+	</div>
+	<div id="title">
+		툴 활용
+	</div>
+
+
+	<div class="wrapper">
+		<div class="class-content-title">수강기록
+
+            <ul class="class-chapter">
+                <li><a href="#">많이 본</a></li>
+                <li>ㅣ</li>
+                <li><a href="#">최근 본</a></li>
+                <li class="li-p"> 순 정렬</li>
+            </ul>
+		</div>
+		
+        <div class="class-content-card-section">
+			<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+			<a href="https://www.youtube.com/watch?v=S_bKcV9dKqc&t=17s">
+				<div class="class-content-card">
+
+					<!-- 썸네일 이미지 -->
+					<img class="class-content-card-sum" src="https://img.youtube.com/vi/S_bKcV9dKqc/maxresdefault.jpg">
+
+					<div class="class-content-card-text">
+				<div class="class-content-card-text-title">#1부.이거보면 100% 
+					피그마 독학 가능합니다.</div>
+
+					<!-- 툴 이미지 -->
+					<img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+					</div>
+
+					<div class="class-content-card-text-2">
+
+					<!-- 스텝이미지 -->
+					<img class="class-content-card-small-ball" src="https://i.postimg.cc/nhzrcnX5/Group-84.png">
+					<p>step2</p>
+
+					<!-- 유튜버 이미지 -->
+					<img class="class-content-card-small-ball" src="https://yt3.ggpht.com/ytc/AKedOLRrFubXdJuf43MThkfQ65sayUgBKjfbC34Nnhme4g=s48-c-k-c0x00ffffff-no-rj">
+					<p>Madia Designer</p>
+					
+					</div>
+			</div></a>
+			<!-- 카드한장끝 -->
+
+			<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+			<a href="https://www.youtube.com/watch?v=GsZk8s5JdWg&t=3s">
+				<div class="class-content-card">
+
+					<!-- 썸네일 이미지 -->
+					<img class="class-content-card-sum" src="https://img.youtube.com/vi/GsZk8s5JdWg/maxresdefault.jpg">
+
+					<div class="class-content-card-text">
+				<div class="class-content-card-text-title">#1 피그마 기초 강좌 ㅣ 
+					2020 Part 1</div>
+
+					<!-- 툴 이미지 -->
+					<img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+					</div>
+
+					<div class="class-content-card-text-2">
+
+					<!-- 스텝이미지 -->
+					<img class="class-content-card-small-ball" src="https://i.postimg.cc/nhzrcnX5/Group-84.png">
+					<p>step2</p>
+
+					<!-- 유튜버 이미지 -->
+					<img class="class-content-card-small-ball" src="https://yt3.ggpht.com/ytc/AKedOLRiGH0bCbKTAtpuZF3W154-GFf7QYdWdWDFBQY6zvI=s176-c-k-c0x00ffffff-no-rj-mo">
+					<p>연정's Figma
+					</p>
+					
+					</div>
+			</div></a>
+			<!-- 카드한장끝 -->
+
+			<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+			<a href="https://www.youtube.com/watch?v=CKt9x66Egyo">
+				<div class="class-content-card">
+
+					<!-- 썸네일 이미지 -->
+					<img class="class-content-card-sum" src="https://img.youtube.com/vi/CKt9x66Egyo/maxresdefault.jpg">
+
+					<div class="class-content-card-text">
+				<div class="class-content-card-text-title">figma 회원가입 가이드</div>
+
+					<!-- 툴 이미지 -->
+					<img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+					</div>
+
+					<div class="class-content-card-text-2">
+
+					<!-- 스텝이미지 -->
+					<img class="class-content-card-small-ball" src="https://i.postimg.cc/nhzrcnX5/Group-84.png">
+					<p>step2</p>
+
+					<!-- 유튜버 이미지 -->
+					<img class="class-content-card-small-ball" src="https://yt3.ggpht.com/ytc/AKedOLRiGH0bCbKTAtpuZF3W154-GFf7QYdWdWDFBQY6zvI=s176-c-k-c0x00ffffff-no-rj-mo">
+					<p>연정's Figma</p>
+					
+					</div>
+			</div></a>
+			<!-- 카드한장끝 -->
+
+			<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+			<a href="https://www.youtube.com/watch?v=urx7KsMV7ao&t=1s">
+				<div class="class-content-card">
+
+					<!-- 썸네일 이미지 -->
+					<img class="class-content-card-sum" src="https://img.youtube.com/vi/urx7KsMV7ao/maxresdefault.jpg">
+
+					<div class="class-content-card-text">
+				<div class="class-content-card-text-title">Figma 빠르게 훑어보기 
+					ㅣ 피그마 기초 강좌</div>
+
+					<!-- 툴 이미지 -->
+					<img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+					</div>
+
+					<div class="class-content-card-text-2">
+
+					<!-- 스텝이미지 -->
+					<img class="class-content-card-small-ball" src="https://i.postimg.cc/nhzrcnX5/Group-84.png">
+					<p>step2</p>
+
+					<!-- 유튜버 이미지 -->
+					<img class="class-content-card-small-ball" src="https://yt3.ggpht.com/ytc/AKedOLRiGH0bCbKTAtpuZF3W154-GFf7QYdWdWDFBQY6zvI=s176-c-k-c0x00ffffff-no-rj-mo">
+					<p>연정's Figma</p>
+					
+					</div>
+			</div></a>
+			<!-- 카드한장끝 -->
+		
+		</div>
+		<!-- 섹션 하나 끝 -->
+
+        
+        <div class="class-content-title">인기크리에이터
+
+            <ul class="class-chapter">
+                <li><a href="#">구독자수</a></li>
+                <li>ㅣ</li>
+                <li><a href="#">가다나</a></li>
+                <li class="li-p"> 순 정렬</li>
+            </ul>
+		</div>
+
+        <!-- 아티스트섹션 시작 -->
+		<div class="class-artist-card-section">
+
+            <div class="class-scroll-content">  
+
+
+                <!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+                <a href="https://www.youtube.com/channel/UCxRnfrmJAkRLarzeBJETB5g">
+                <div class="class-artist-card">
+                <!-- 유튜브 프로필 -->
+                <img src="https://yt3.ggpht.com/ytc/AKedOLRrFubXdJuf43MThkfQ65sayUgBKjfbC34Nnhme4g=s48-c-k-c0x00ffffff-no-rj">
+                <p>Madia Designer</p>[구독자 22.3만명]</div></a>
+                
+		    	<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+                <a href="https://www.youtube.com/c/EasywebPublishing">
+                <div class="class-artist-card">
+                <!-- 유튜브 프로필 -->
+                <img src="https://yt3.ggpht.com/ytc/AKedOLSM_GRdqe5nya1CJmE2yEbboO7MmwUcSKVQc9W-_A=s68-c-k-c0x00ffffff-no-rj">
+                <p>Rock's Easyweb</p>[구독자 1.4만명]</div></a>
+
+	    		<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+                <a href="https://www.youtube.com/c/%EC%97%B0%EC%A0%95sFigma">
+                <div class="class-artist-card">
+                <!-- 유튜브 프로필 -->
+                <img src="https://yt3.ggpht.com/ytc/AKedOLRiGH0bCbKTAtpuZF3W154-GFf7QYdWdWDFBQY6zvI=s176-c-k-c0x00ffffff-no-rj-mo">
+                <p>연정's Figma</p>[구독자 8.51천명]</div></a>
+
+  		    	<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->                  
+                <a href="https://www.youtube.com/c/SongAmi">
+                <div class="class-artist-card">
+                <!-- 유튜브 프로필 -->
+                <img src="https://yt3.ggpht.com/ytc/AKedOLRpGQOQpoVuNs3xBE22A3OrkWxShW65IujCeJvGmlk=s176-c-k-c0x00ffffff-no-rj-mo">
+                <p>Ami Design TV</p>[구독자 8.14천명]</div></a>
+
+	    		<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+                <a href="https://www.youtube.com/c/HazelSong">
+                <div class="class-artist-card">
+                <!-- 유튜브 프로필 -->
+                <img src="https://yt3.ggpht.com/ytc/AKedOLR6GCkg29qQ2GD8WYEV9A-ON8me0sZUbk3qUOU7=s176-c-k-c0x00ffffff-no-rj-mo">
+                <p>Hazel Song</p>[구독자 3.5천명]</div></a>
+
+                <!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+                <a href="https://www.youtube.com/channel/UCjlBl1E7MK0uGfakPuyYSug">
+                <div class="class-artist-card">
+                <!-- 유튜브 프로필 -->
+                <img src="https://yt3.ggpht.com/_ubBmmx0MpG-ozWLrhuoEDXgdCDAx5BrsHlS8kwD7DGVJSQBqCMwCuIcgGp_hsI1d-drevBvZw=s88-c-k-c0x00ffffff-no-rj">
+                <p>기획자의 피그마</p>[구독자 736명]</div></a>
+               
+
+            </div>                                                           
+        </div>
+        <!-- 섹션 하나 끝 -->
+
+        <div class="class-content-title">세부분류
+
+            <ul class="class-chapter">
+                <li><a href="#">단계분류</a></li>
+                <li>ㅣ</li>
+                <li><a href="#">툴분류</a></li>
+                <li>ㅣ</li>
+                <li><a href="#">강의 제공자</a></li>
+                <li class="li-p"> 순 정렬</li>
+            </ul>
+		</div>
+
+        <!-- 하위페이지 섹션 시작 -->
+        <div class="class-under-card-section">
+                
+           <!-- 1줄  -->
+            <div class="class-under-card-one">
+                <div class="class-right-button">
+                    >
+                </div>
+                <!-- 스텝 -->
+                <a href="intro-diamond.html">
+                <div class="class-artist-card">
+                <img src="https://i.postimg.cc/nhzrcnX5/Group-84.png">
+                <p>Step 2
+                    </p>[정의 Define]</div></a>
+
+                <div class="class-under-card-two">
+                    <div class="class-under-card-scroll">
+                        <!-- 언더카드시작 -->
+                        <a href="class-under-1.html">
+                        <div class="class-under-card">
+                            <!-- 언더카드썸네일 -->
+                            <img class="class-under-card-sum" src="https://cdn.inflearn.com/public/courses/326410/cover/8d35f4c7-6af2-45ff-9161-cfd470de734d">
+
+                            <div class="class-under-card-text">
+                                <div class="class-under-card-text-title">시작하기</div>
+                
+                                    <!-- 툴 이미지 -->
+                                    <img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+                            </div>
+                            <div class="class-under-card-para">
+                                Figma 는 기본적으로 웹 기반 인 벡터 그래픽 편집기 및 프로토타이핑 도구이며 macOS 및 Windows 용 데스크톱 응용 프로그램에서 추가 오프라인 기능을 사용할 수 있습니다. </div> 
+                        </div></a>
+                        <!-- 언더카드 끝 -->
+                        <!-- 언더카드시작 -->
+                        <a href="class-under-1.html">
+                            <div class="class-under-card">
+                                <!-- 언더카드썸네일 -->
+                                <img class="class-under-card-sum" src="https://cdn.inflearn.com/public/course-326063-cover/4aff7ad8-ebd6-49ea-8d19-64d7e746c4fe">
+    
+                                <div class="class-under-card-text">
+                                    <div class="class-under-card-text-title">프로토타이핑</div>
+                    
+                                        <!-- 툴 이미지 -->
+                                        <img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+                                </div>
+                                <div class="class-under-card-para">
+                                    피그마에서는 어느버튼을 클릭하면 어떤 화면으로 이동하는지 등을 프로토타입으로 제작할 수 있습니다. 따라서 개발자가 기획서를 이해하기도 훨씬 쉽고, 필요한 경우 녹화까지 할 수 있어서 유용합니다. </div> 
+                            </div></a>
+                            <!-- 언더카드 끝 -->
+                            <!-- 언더카드시작 -->
+                        <a href="class-under-1.html">
+                            <div class="class-under-card">
+                                <!-- 언더카드썸네일 -->
+                                <img class="class-under-card-sum" src="https://i.ytimg.com/vi/iD7m0falLaA/maxresdefault.jpg">
+    
+                                <div class="class-under-card-text">
+                                    <div class="class-under-card-text-title">플러그인</div>
+                    
+                                        <!-- 툴 이미지 -->
+                                        <img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+                                </div>
+                                <div class="class-under-card-para">
+                                    피그마의 가장 큰 장점은 정말 다양한 플러그인을 지원한다는 것입니다. 지금까지 정말 다양한 플러그인이 출시되었고, 웬만한 플러그인만 있으면 모든 디자인 과정을 피그마로 해결할 수 있는 수준에 이르렀습니다. </div> 
+                            </div></a>
+                            <!-- 언더카드 끝 -->
+                            <!-- 언더카드시작 -->
+                        <a href="class-under-1.html">
+                            <div class="class-under-card">
+                                <!-- 언더카드썸네일 -->
+                                <img class="class-under-card-sum" src="https://helpx.adobe.com/content/dam/help/en/xd/help/share-designs-prototypes/jcr_content/main-pars/image/Share-hero-2.jpg.img.jpg">
+    
+                                <div class="class-under-card-text">
+                                    <div class="class-under-card-text-title">시작하기</div>
+                    
+                                        <!-- 툴 이미지 -->
+                                        <img class="class-content-card-big-ball" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png">
+                                </div>
+                                <div class="class-under-card-para">
+                                    Adobe XD는 진화하는 디지털 세계의 가이드가 될 수 있습니다. 여러분의 이야기를 들려줄 수 있는 현실적인 프로토타입을 제작하고 큰 아이디어를 더 빨리 실현하세요.</div> 
+                            </div></a>
+                            <!-- 언더카드 끝 -->
+                           
+                    </div>
+
+                </div>
+            </div>
+            <!-- 1줄 끝  -->
+            <!-- 2줄  -->
+
+            <div class="class-under-card-one">
+                <div class="class-right-button">
+                    >
+                </div>
+                <!-- 스텝 -->
+                <a href="intro-diamond.html">
+                <div class="class-artist-card">
+                <img src="https://i.postimg.cc/nhzrcnX5/Group-84.png">
+                <p>Step 3
+                    </p>[개발 Develop]</div></a>
+
+                <div class="class-under-card-two">
+                    <div class="class-under-card-scroll">
+
+
+                        <!-- 언더카드시작 -->
+                        <a href="class-under-1.html">
+                        <div class="class-under-card">
+                            <!-- 언더카드썸네일 -->
+                            <img class="class-under-card-sum" src="https://img.youtube.com/vi/PVhyKOULO4s/maxresdefault.jpg">
+
+                            <div class="class-under-card-text">
+                                <div class="class-under-card-text-title">캐릭터 디자인</div>
+                
+                                    <!-- 툴 이미지 -->
+                                    <img class="class-content-card-big-ball" src="https://ww.namu.la/s/741cb5ff6ea9b1daed3d1ba974fdfd0379de9d7624e30e1ea41078744d020adada37b6d5f76206c431c28850b74da8b96c7cc5a74f5106ab87f2c57aa2bfe51fc625a24df16632a19c046295d04e7534">
+                            </div>
+                            <div class="class-under-card-para">
+                                캐릭터 상품이 청소년들을 비롯해 많은 사람들에게 사랑받기 시작하면서 캐릭터 디자인과 디자이너에 대한 관심이 높아졌습니다. 동시에 캐릭터 디자인이라는 업무와 디자이너에 대한 궁금증도 커졌습니다. </div> 
+                        </div></a>
+                        <!-- 언더카드 끝 -->
+                        <!-- 언더카드시작 -->
+                        <a href="class-under-1.html">
+                            <div class="class-under-card">
+                                <!-- 언더카드썸네일 -->
+                                <img class="class-under-card-sum" src="https://img.youtube.com/vi/ZnJp1WkxOk0/maxresdefault.jpg">
+    
+                                <div class="class-under-card-text">
+                                    <div class="class-under-card-text-title">로고 디자인</div>
+                    
+                                        <!-- 툴 이미지 -->
+                                        <img class="class-content-card-big-ball" src="https://ww.namu.la/s/741cb5ff6ea9b1daed3d1ba974fdfd0379de9d7624e30e1ea41078744d020adada37b6d5f76206c431c28850b74da8b96c7cc5a74f5106ab87f2c57aa2bfe51fc625a24df16632a19c046295d04e7534">
+                                </div>
+                                <div class="class-under-card-para">
+                                    ‘자기다움’으로 ‘남과 다름(정체성)’을 정의하고 대중과 소통이 이루어지도록 돕는 로고는 기업에게 없어선 안 될 필수불가결한 요소이다. 특히 기업에 있어서 로고는 브랜드 정체성을 확실하게 인식시키기 위해 존재합니다.</div> 
+                            </div></a>
+                            <!-- 언더카드 끝 -->
+                            <!-- 언더카드시작 -->
+                        <a href="class-under-1.html">
+                            <div class="class-under-card">
+                                <!-- 언더카드썸네일 -->
+                                <img class="class-under-card-sum" src="https://img.youtube.com/vi/jYbJwgYQJqI/maxresdefault.jpg">
+    
+                                <div class="class-under-card-text">
+                                    <div class="class-under-card-text-title">아이콘 디자인</div>
+                    
+                                        <!-- 툴 이미지 -->
+                                        <img class="class-content-card-big-ball" src="https://ww.namu.la/s/741cb5ff6ea9b1daed3d1ba974fdfd0379de9d7624e30e1ea41078744d020adada37b6d5f76206c431c28850b74da8b96c7cc5a74f5106ab87f2c57aa2bfe51fc625a24df16632a19c046295d04e7534">
+                                </div>
+                                <div class="class-under-card-para">
+                                    아이콘에서는 일관성이 핵심 요소이며 기본 사이즈가 같아야 합니다. 우선 그리드 비율(8또는 10)을 정해야 기본이 되는 사이즈를 정할 수 있다. 만약 8px그리드를 사용한다면 16, 24, 32… 사이즈로 제작합니다. </div> 
+                            </div></a>
+                            <!-- 언더카드 끝 -->
+                            <!-- 언더카드시작 -->
+                        <a href="class-under-1.html">
+                            <div class="class-under-card">
+                                <!-- 언더카드썸네일 -->
+                                <img class="class-under-card-sum" src="https://img.youtube.com/vi/3CXtwfr9Dbs/maxresdefault.jpg">
+    
+                                <div class="class-under-card-text">
+                                    <div class="class-under-card-text-title">타이포그래픽</div>
+                    
+                                        <!-- 툴 이미지 -->
+                                        <img class="class-content-card-big-ball" src="https://ww.namu.la/s/741cb5ff6ea9b1daed3d1ba974fdfd0379de9d7624e30e1ea41078744d020adada37b6d5f76206c431c28850b74da8b96c7cc5a74f5106ab87f2c57aa2bfe51fc625a24df16632a19c046295d04e7534">
+                                </div>
+                                <div class="class-under-card-para">
+                                    타이포그래피는 활자 서체의 배열을 말하는데 특히 문자 또는 활판적기호를 중심으로 한 2차원적 표현을 가리킨다. 활판으로 하는 인쇄술을 가리키는 용어이기도 하다.</div> 
+                            </div></a>
+                            <!-- 언더카드 끝 -->
+                    </div>
+
+                </div>
+            </div>
+            <!-- 2줄 끝  -->
+
+        </div>
+        <!-- 하위페이지 섹션 끝 -->
+</div>
+</div>
+		
+<footer>
+    <a href="index.html"><img class="footlogo" src="https://i.postimg.cc/2ywWyB9m/Group-74.png"></a>
+
+    <div class="footA">
+                <ul>
+                    
+                    <li><a href="intro-site.html">사이트소개
+                    </span></a></li>
+
+            <li><a href="intro-site.html">이용약관
+                    </span></a></li>
+
+            <li><a href="intro-site.html">이용안내
+                    </span></a></li>
+
+            <li><a href="intro-site.html">개인정보처리방침
+                    </span></a></li>
+                    
+                    
+                    </ul>
+                </div>
+
+
+    <div class="footB">
+                <ul>
+                    
+                    <li><a href="https://twitter.com/?lang=ko">
+                    <span class="fa fa-twitter" title="Twitter">
+                    </span></a></li>
+
+                    <li><a href="https://ko-kr.facebook.com/">
+                    <span class="fa fa-facebook" title="Facebook">
+                    </span></a></li>
+
+                    <li><a href="https://www.instagram.com/?hl=ko">
+                    <span class="fa fa-instagram" title="Instagram">
+                    </span></a></li>
+
+                    <li><a href="https://www.youtube.com/">
+                    <span class="fa fa-youtube" title="YouTube">
+                    </span></a></li>
+                    
+                    </ul>
+                </div>
+
+
+    <p class="footC">
+                Copyright © Web Publishing. 2021 All Rights Reserved.</p>
+</footer>
+	
+	
+	</body>
+	</html>	
+

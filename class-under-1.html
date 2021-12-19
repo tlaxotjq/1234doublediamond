@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>class</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/d82e6448db.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="nav-foot-style.css">
+
+	<style type="text/css">
+		/* 바디 */
+		.wrapper{
+			max-width: 900px;
+			margin: 0 auto;
+		}
+
+		.class-content-title{
+			display: flex;
+			justify-content: space-between;
+			height: 42px;
+			font-size: 36px;
+			font-weight: bolder;
+			margin-top: 160px;
+			margin-bottom: 8px;
+		}
+		.class-content-title:first-child {
+			margin-top:0;
+		}
+		.class-chapter {
+			margin-top: 20px;
+		}
+
+		.class-content-title p {
+			font-weight: bolder;
+			font-size: 18px;
+			line-height: 21px;
+			color: #424242;
+		}
+		.class-chapter li {
+			font-size: 14px;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 21px;
+			color: #424242;
+		}
+
+		.class-chapter li a {
+			color: #757575;
+			font-size: 18px;
+		}
+
+		.class-chapter li a:hover {
+			font-weight: 800;
+			color: #6426EB;
+		}
+		.li-p {
+			margin-left: 8px;
+		}
+
+		.class-content-card-section{
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+		}
+		.class-content-card-section a {
+			text-decoration: none;
+		}
+		
+		.class-content-card{
+			margin-top: 24px;
+			overflow: hidden;
+			width: 210px;
+			height: 240px;
+			border: 1px solid #212121 inset;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 8px;
+		}
+
+		.class-content-card:hover .class-content-card-sum {
+			border: 0px;
+			height: 160px;
+			width: 280px;
+			margin-left: -35px;
+		}
+
+
+		.class-content-card-sum {
+			text-align: right;
+			width: 210px;
+			height: 120px;
+		
+			border-top: 20px solid #212121;
+			border-bottom: 20px solid #212121;
+			transition: all 0.8s ease;  
+
+		}
+
+		.class-content-card-text {
+			display: flex;
+		}
+
+		.class-content-card-text-2 {
+			display: flex;
+		}
+		.class-content-card-text-title {
+			margin-top: 12px;
+			margin-left: 12px;
+			width: 132px;
+			height: 26px;
+			font-weight: bolder;
+			font-size: 12px;
+			line-height: 110%;
+			color: #212121;
+		}
+		
+		.class-content-card-big-ball {
+			margin-top: 8px;
+			margin-left: 22px;
+			width: 32px;
+			height: 32px;
+			border-radius : 50%;
+			border: 1px solid #aaaaaa;
+		}
+		.class-content-card-small-ball {
+			margin-top: 9px;
+			margin-left: 12px;
+			width: 16px;
+			height: 16px;
+			border-radius : 50%;
+			border: 1px solid #aaaaaa;
+		}
+		.class-content-card-text-2 p {
+			margin-top: 12px;
+			margin-left: 4px;
+			font-weight: 300;
+			font-size: 10px;
+			line-height: 100%;
+			color: #AAAAAA;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="nav">
+		<nav>
+			<div class="logo">
+				<a href="index.html"><img src="https://i.postimg.cc/g2x5b7WK/Group-83.png"></a>
+			</div>
+			<ul class="menu">
+				<li><a href="intro-site.html">소개</a>
+					<div class="textarea"></div>
+				</li>
+				<li><a href="class.html">강의 자료실</a>
+					<div class="textarea"></div>
+				</li>
+				<li><a href="reference.html">참조 사이트</a>
+					<div class="textarea"></div>
+				</li>
+			</ul>
+			<div class="search-box">
+				<input type="text" class="search-txt" name="" placeholder="검색어를 입력하세요">
+				<a class="search-btn" href="#">
+					<i class="fas fa-search"></i>
+				</a>
+			</div>
+			<ul class="login">
+				<li><a href="sign.html">회원가입</a></li>
+				<li>ㅣ</li>
+				<li><a href="login.html">로그인</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+
+
+	<div id="subnav">
+		<ul class="direction">
+			<li><a href="index.html">홈</a></li>
+			<li>></li>
+			<li><a href="class.html">강의자료실</a></li>
+			<li>></li>
+			<li><a href="class.html">툴활용</a></li>
+		</ul>
+	</div>
+	<div id="title">
+		피그마 시작하기
+	</div>
+
+
+	<div class="wrapper">
+		<div class="class-content-title">인기강의
+		</div>
+
+		
+
+		<div class="class-content-card-section">
+			<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+			<a href="https://www.youtube.com/watch?v=S_bKcV9dKqc&t=17s">
+				<div class="class-content-card">
+
+					<!-- 썸네일 이미지 -->
+					<img class="class-content-card-sum" src="https://img.youtube.com/vi/S_bKcV9dKqc/maxresdefault.jpg">
+
+					<div class="class-content-card-text">
+				<div class="class-content-card-text-title">#1부.이거보면 100% 
+					피그마 독학 가능합니다.</div>
+
+					<!-- 툴 이미지 -->
+					<img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+					</div>
+
+					<div class="class-content-card-text-2">
+
+					<!-- 스텝이미지 -->
+					<img class="class-content-card-small-ball" src="https://i.postimg.cc/nhzrcnX5/Group-84.png">
+					<p>step2</p>
+
+					<!-- 유튜버 이미지 -->
+					<img class="class-content-card-small-ball" src="https://yt3.ggpht.com/ytc/AKedOLRrFubXdJuf43MThkfQ65sayUgBKjfbC34Nnhme4g=s48-c-k-c0x00ffffff-no-rj">
+					<p>Madia Designer</p>
+					
+					</div>
+			</div></a>
+			<!-- 카드한장끝 -->
+
+			<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+			<a href="https://www.youtube.com/watch?v=GsZk8s5JdWg&t=3s">
+				<div class="class-content-card">
+
+					<!-- 썸네일 이미지 -->
+					<img class="class-content-card-sum" src="https://img.youtube.com/vi/GsZk8s5JdWg/maxresdefault.jpg">
+
+					<div class="class-content-card-text">
+				<div class="class-content-card-text-title">#1 피그마 기초 강좌 ㅣ 
+					2020 Part 1</div>
+
+					<!-- 툴 이미지 -->
+					<img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+					</div>
+
+					<div class="class-content-card-text-2">
+
+					<!-- 스텝이미지 -->
+					<img class="class-content-card-small-ball" src="https://i.postimg.cc/nhzrcnX5/Group-84.png">
+					<p>step2</p>
+
+					<!-- 유튜버 이미지 -->
+					<img class="class-content-card-small-ball" src="https://yt3.ggpht.com/ytc/AKedOLRiGH0bCbKTAtpuZF3W154-GFf7QYdWdWDFBQY6zvI=s176-c-k-c0x00ffffff-no-rj-mo">
+					<p>연정's Figma
+					</p>
+					
+					</div>
+			</div></a>
+			<!-- 카드한장끝 -->
+
+			<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+			<a href="https://www.youtube.com/watch?v=CKt9x66Egyo">
+				<div class="class-content-card">
+
+					<!-- 썸네일 이미지 -->
+					<img class="class-content-card-sum" src="https://img.youtube.com/vi/CKt9x66Egyo/maxresdefault.jpg">
+
+					<div class="class-content-card-text">
+				<div class="class-content-card-text-title">figma 회원가입 가이드</div>
+
+					<!-- 툴 이미지 -->
+					<img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+					</div>
+
+					<div class="class-content-card-text-2">
+
+					<!-- 스텝이미지 -->
+					<img class="class-content-card-small-ball" src="https://i.postimg.cc/nhzrcnX5/Group-84.png">
+					<p>step2</p>
+
+					<!-- 유튜버 이미지 -->
+					<img class="class-content-card-small-ball" src="https://yt3.ggpht.com/ytc/AKedOLRiGH0bCbKTAtpuZF3W154-GFf7QYdWdWDFBQY6zvI=s176-c-k-c0x00ffffff-no-rj-mo">
+					<p>연정's Figma</p>
+					
+					</div>
+			</div></a>
+			<!-- 카드한장끝 -->
+
+			<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+			<a href="https://www.youtube.com/watch?v=urx7KsMV7ao&t=1s">
+				<div class="class-content-card">
+
+					<!-- 썸네일 이미지 -->
+					<img class="class-content-card-sum" src="https://img.youtube.com/vi/urx7KsMV7ao/maxresdefault.jpg">
+
+					<div class="class-content-card-text">
+				<div class="class-content-card-text-title">Figma 빠르게 훑어보기 
+					ㅣ 피그마 기초 강좌</div>
+
+					<!-- 툴 이미지 -->
+					<img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+					</div>
+
+					<div class="class-content-card-text-2">
+
+					<!-- 스텝이미지 -->
+					<img class="class-content-card-small-ball" src="https://i.postimg.cc/nhzrcnX5/Group-84.png">
+					<p>step2</p>
+
+					<!-- 유튜버 이미지 -->
+					<img class="class-content-card-small-ball" src="https://yt3.ggpht.com/ytc/AKedOLRiGH0bCbKTAtpuZF3W154-GFf7QYdWdWDFBQY6zvI=s176-c-k-c0x00ffffff-no-rj-mo">
+					<p>연정's Figma</p>
+					
+					</div>
+			</div></a>
+			<!-- 카드한장끝 -->
+		
+		</div>
+		<!-- 섹션 하나 끝 -->
+
+
+
+
+
+
+
+
+
+			<div class="class-content-title">동영상강의
+
+				<ul class="class-chapter">
+					<li><a href="#">최근 본</a></li>
+					<li>ㅣ</li>
+					<li><a href="#">많이 본</a></li>
+					<li class="li-p"> 순 정렬</li>
+				</ul>
+			</div>
+	
+			
+	
+			<div class="class-content-card-section">
+				<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+				<a href="https://www.youtube.com/watch?v=S_bKcV9dKqc&t=17s">
+					<div class="class-content-card">
+	
+						<!-- 썸네일 이미지 -->
+						<img class="class-content-card-sum" src="https://img.youtube.com/vi/S_bKcV9dKqc/maxresdefault.jpg">
+	
+						<div class="class-content-card-text">
+					<div class="class-content-card-text-title">#1부.이거보면 100% 
+						피그마 독학 가능합니다.</div>
+	
+						<!-- 툴 이미지 -->
+						<img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+						</div>
+	
+						<div class="class-content-card-text-2">
+	
+						<!-- 스텝이미지 -->
+						<img class="class-content-card-small-ball" src="https://i.postimg.cc/nhzrcnX5/Group-84.png">
+						<p>step2</p>
+	
+						<!-- 유튜버 이미지 -->
+						<img class="class-content-card-small-ball" src="https://yt3.ggpht.com/ytc/AKedOLRrFubXdJuf43MThkfQ65sayUgBKjfbC34Nnhme4g=s48-c-k-c0x00ffffff-no-rj">
+						<p>Madia Designer</p>
+						
+						</div>
+				</div></a>
+				<!-- 카드한장끝 -->
+	
+				<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+				<a href="https://www.youtube.com/watch?v=GsZk8s5JdWg&t=3s">
+					<div class="class-content-card">
+	
+						<!-- 썸네일 이미지 -->
+						<img class="class-content-card-sum" src="https://img.youtube.com/vi/GsZk8s5JdWg/maxresdefault.jpg">
+	
+						<div class="class-content-card-text">
+					<div class="class-content-card-text-title">#1 피그마 기초 강좌 ㅣ 
+						2020 Part 1</div>
+	
+						<!-- 툴 이미지 -->
+						<img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+						</div>
+	
+						<div class="class-content-card-text-2">
+	
+						<!-- 스텝이미지 -->
+						<img class="class-content-card-small-ball" src="https://i.postimg.cc/nhzrcnX5/Group-84.png">
+						<p>step2</p>
+	
+						<!-- 유튜버 이미지 -->
+						<img class="class-content-card-small-ball" src="https://yt3.ggpht.com/ytc/AKedOLRiGH0bCbKTAtpuZF3W154-GFf7QYdWdWDFBQY6zvI=s176-c-k-c0x00ffffff-no-rj-mo">
+						<p>연정's Figma
+						</p>
+						
+						</div>
+				</div></a>
+				<!-- 카드한장끝 -->
+	
+				<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+				<a href="https://www.youtube.com/watch?v=CKt9x66Egyo">
+					<div class="class-content-card">
+	
+						<!-- 썸네일 이미지 -->
+						<img class="class-content-card-sum" src="https://img.youtube.com/vi/CKt9x66Egyo/maxresdefault.jpg">
+	
+						<div class="class-content-card-text">
+					<div class="class-content-card-text-title">figma 회원가입 가이드</div>
+	
+						<!-- 툴 이미지 -->
+						<img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+						</div>
+	
+						<div class="class-content-card-text-2">
+	
+						<!-- 스텝이미지 -->
+						<img class="class-content-card-small-ball" src="https://i.postimg.cc/nhzrcnX5/Group-84.png">
+						<p>step2</p>
+	
+						<!-- 유튜버 이미지 -->
+						<img class="class-content-card-small-ball" src="https://yt3.ggpht.com/ytc/AKedOLRiGH0bCbKTAtpuZF3W154-GFf7QYdWdWDFBQY6zvI=s176-c-k-c0x00ffffff-no-rj-mo">
+						<p>연정's Figma</p>
+						
+						</div>
+				</div></a>
+				<!-- 카드한장끝 -->
+	
+				<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+				<a href="https://www.youtube.com/watch?v=urx7KsMV7ao&t=1s">
+					<div class="class-content-card">
+	
+						<!-- 썸네일 이미지 -->
+						<img class="class-content-card-sum" src="https://img.youtube.com/vi/urx7KsMV7ao/maxresdefault.jpg">
+	
+						<div class="class-content-card-text">
+					<div class="class-content-card-text-title">Figma 빠르게 훑어보기 
+						ㅣ 피그마 기초 강좌</div>
+	
+						<!-- 툴 이미지 -->
+						<img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+						</div>
+	
+						<div class="class-content-card-text-2">
+	
+						<!-- 스텝이미지 -->
+						<img class="class-content-card-small-ball" src="https://i.postimg.cc/nhzrcnX5/Group-84.png">
+						<p>step2</p>
+	
+						<!-- 유튜버 이미지 -->
+						<img class="class-content-card-small-ball" src="https://yt3.ggpht.com/ytc/AKedOLRiGH0bCbKTAtpuZF3W154-GFf7QYdWdWDFBQY6zvI=s176-c-k-c0x00ffffff-no-rj-mo">
+						<p>연정's Figma</p>
+						
+						</div>
+				</div></a>
+				<!-- 카드한장끝 -->
+			
+			</div>
+			<!-- 섹션 하나 끝 -->
+			
+			<div class="class-content-title">게시물강의
+
+			<ul class="class-chapter">
+				<li><a href="#">최근 본</a></li>
+				<li>ㅣ</li>
+				<li><a href="#">많이 본</a></li>
+				<li class="li-p"> 순 정렬</li>
+			</ul>
+		</div>
+
+		
+
+		<div class="class-content-card-section">
+			<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+			<a href="https://brunch.co.kr/@ceoxino/32">
+				<div class="class-content-card">
+
+					<!-- 썸네일 이미지 -->
+					<img class="class-content-card-sum" src="https://designcompass162885993.files.wordpress.com/2020/11/thum_figma_start-1.png">
+
+					<div class="class-content-card-text">
+				<div class="class-content-card-text-title">피그마 시작하기 01</div>
+
+					<!-- 툴 이미지 -->
+					<img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+					</div>
+
+					<div class="class-content-card-text-2">
+
+					<!-- 스텝이미지 -->
+					<img class="class-content-card-small-ball" src="https://i.postimg.cc/nhzrcnX5/Group-84.png">
+					<p>step2</p>
+
+					<!-- 유튜버 이미지 -->
+					<img class="class-content-card-small-ball" src="https://image.istarbucks.co.kr/upload/store/skuimg/2020/07/[9300000002421]_20200724093456220.jpg">
+					<p>Steve Kim</p>
+					
+					</div>
+			</div></a>
+			<!-- 카드한장끝 -->
+
+			<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+			<a href="https://designcompass.org/2020/11/22/01-%ED%94%BC%EA%B7%B8%EB%A7%88-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-2/">
+				<div class="class-content-card">
+
+					<!-- 썸네일 이미지 -->
+					<img class="class-content-card-sum" src="https://t1.daumcdn.net/cfile/tistory/99C1A5505FE971C019">
+
+					<div class="class-content-card-text">
+				<div class="class-content-card-text-title">01.피그마시작하기</div>
+
+					<!-- 툴 이미지 -->
+					<img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+					</div>
+
+					<div class="class-content-card-text-2">
+
+					<!-- 스텝이미지 -->
+					<img class="class-content-card-small-ball" src="https://i.postimg.cc/nhzrcnX5/Group-84.png">
+					<p>step2</p>
+
+					<!-- 유튜버 이미지 -->
+					<img class="class-content-card-small-ball" src="https://designcompass162885993.files.wordpress.com/2020/01/logo_white.png">
+					<p>Design Compass</p>
+					
+					</div>
+			</div></a>
+			<!-- 카드한장끝 -->
+
+			<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+			<a href="https://nsios.tistory.com/102">
+				<div class="class-content-card">
+
+					<!-- 썸네일 이미지 -->
+					<img class="class-content-card-sum" src="https://cdn.inflearn.com/public/files/courses/326410/b9a3685d-f70d-425e-914b-f9b7da91e95c/326410-2.png">
+
+					<div class="class-content-card-text">
+				<div class="class-content-card-text-title">[Figma] 피그마 기초 사용법</div>
+
+					<!-- 툴 이미지 -->
+					<img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+					</div>
+
+					<div class="class-content-card-text-2">
+
+					<!-- 스텝이미지 -->
+					<img class="class-content-card-small-ball" src="https://i.postimg.cc/nhzrcnX5/Group-84.png">
+					<p>step2</p>
+
+					<!-- 유튜버 이미지 -->
+					<img class="class-content-card-small-ball" src="https://tistory4.daumcdn.net/tistory/3197485/attach/830e39025f8b460e86a017b7b29be7a1">
+					<p>NamS</p>
+					
+					</div>
+			</div></a>
+			<!-- 카드한장끝 -->
+
+			<!-- 카드한장시작, 카드 해당 게시물 링크 기입 -->
+			<a href="https://designer-story.tistory.com/40">
+				<div class="class-content-card">
+
+					<!-- 썸네일 이미지 -->
+					<img class="class-content-card-sum" src="https://post-phinf.pstatic.net/MjAyMTA0MDFfMjAy/MDAxNjE3MjU5OTAxMDc2.yulqW9XQlZsr1NPo8wmPu-tj6BPGB8BbFSgi-X1w-6Qg.pu1uU82GI7Hqh5ia-hk9AQs8ur_OMFg192ahv56b35sg.PNG/InOCh7l4S5V49zG9_OorYFFrgM4s.jpg?type=w400">
+
+					<div class="class-content-card-text">
+				<div class="class-content-card-text-title">Part 3. 피그마 시작 가이드
+					#인터페이스</div>
+
+					<!-- 툴 이미지 -->
+					<img class="class-content-card-big-ball" src="https://blog.kakaocdn.net/dn/kLSUi/btqBO7jmjGb/nBCcnt6CUPH0u9FPQFRoK0/img.png">
+					</div>
+
+					<div class="class-content-card-text-2">
+
+					<!-- 스텝이미지 -->
+					<img class="class-content-card-small-ball" src="https://i.postimg.cc/nhzrcnX5/Group-84.png">
+					<p>step2</p>
+
+					<!-- 유튜버 이미지 -->
+					<img class="class-content-card-small-ball" src="https://yt3.ggpht.com/ytc/AKedOLRiGH0bCbKTAtpuZF3W154-GFf7QYdWdWDFBQY6zvI=s176-c-k-c0x00ffffff-no-rj-mo">
+					<p>연정's Figma</p>
+					
+					</div>
+			</div></a>
+			<!-- 카드한장끝 -->
+		
+		</div>
+		<!-- 섹션 하나 끝 -->
+	</div>
+
+
+
+		<footer>
+			<a href="index.html"><img class="footlogo" src="https://i.postimg.cc/2ywWyB9m/Group-74.png"></a>
+	
+			<div class="footA">
+						<ul>
+							
+							<li><a href="intro-site.html">사이트소개
+                            </span></a></li>
+    
+                    <li><a href="intro-site.html">이용약관
+                            </span></a></li>
+    
+                    <li><a href="intro-site.html">이용안내
+                            </span></a></li>
+    
+                    <li><a href="intro-site.html">개인정보처리방침
+                            </span></a></li>
+							
+							
+							</ul>
+						</div>
+	
+	
+			<div class="footB">
+						<ul>
+							
+							<li><a href="https://twitter.com/?lang=ko">
+							<span class="fa fa-twitter" title="Twitter">
+							</span></a></li>
+	
+							<li><a href="https://ko-kr.facebook.com/">
+							<span class="fa fa-facebook" title="Facebook">
+							</span></a></li>
+	
+							<li><a href="https://www.instagram.com/?hl=ko">
+							<span class="fa fa-instagram" title="Instagram">
+							</span></a></li>
+	
+							<li><a href="https://www.youtube.com/">
+							<span class="fa fa-youtube" title="YouTube">
+							</span></a></li>
+							
+							</ul>
+						</div>
+	
+	
+			<p class="footC">
+						Copyright © Web Publishing. 2021 All Rights Reserved.</p>
+		</footer>
+	
+	
+	</body>
+	</html>	
